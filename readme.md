@@ -6,7 +6,7 @@ Carto's prestend a study case from Spain, which try to achive two goals:
 1.  Identifying the optimal locations for new markets.
 2.  Calculating the catchment areas for locations for which we are lacking historical customer data.
 
-For my project I used datasets of New-York city, which available on the web. A full discussion about the project's goals, steps and tools can be found in *writeup.md*.
+For my project I used datasets of New-York city, which available on the web. A full discussion about the project's goals, steps and tools can be found in *writeup.md*. The data can be download from 7z file here in github.
 
 ---
 
