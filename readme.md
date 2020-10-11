@@ -43,4 +43,3 @@ I upload my *requirements.txt* from Anaconda, but here the most important librar
 
 1. Move to AWS
 2. Add more datasets (Place of interest, etc.)
-3. 
