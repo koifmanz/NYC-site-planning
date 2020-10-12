@@ -69,16 +69,16 @@ CREATE table IF NOT EXISTS data.nyc_taxi_trips (
 
 CREATE table IF NOT EXISTS data.nyc_trips_datetime (
 	trip_id int8 PRIMARY key references nyc_taxi_trips (trip_id),
-	pickup_year float8 NULL,
-	pickup_month float8 NULL,
-	pickup_day float8 NULL,
-	pickup_hour float8 NULL,
-	pickup_minute float8 NULL,
-	dropoff_year float8 NULL,
-	dropoff_month float8 NULL,
-	dropoff_day float8 NULL,
-	dropoff_hour float8 NULL,
-	dropoff_minute float8 NULL
+	pickup_year int null CHECK (pickup_year > 1900),
+	pickup_month int null CHECK (pickup_month > 0),
+	pickup_day int null CHECK (pickup_day > 0),
+	pickup_hour int NULL,
+	pickup_minute int NULL,
+	dropoff_year int null CHECK (dropoff_year > 1900),
+	dropoff_month int null CHECK (dropoff_month > 0),
+	dropoff_day int null CHECK (dropoff_day > 0),
+	dropoff_hour int NULL,
+	dropoff_minute int NULL
 );
 
 
